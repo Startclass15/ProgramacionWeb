@@ -36,14 +36,102 @@
     6. Hora: time
     7. Mes: month
     8. Semana: week
-    -->
-    <form>
 
+    Tipos de datos complementarios
+    9. Rangos : range
+    10. Botones de opcion: radio 
+    11. Casillas de Verificacion: checkbox
+    12. color: color 
+    13. Selectores de archivos: file
+    tipos de archivos
+    * Imagenes
+        image/*
+        image/png
+        image/jpg
+        image/gif
+    * Documentos
+     application/pdf
+     application/msword formato .doc
+     application/vnd.openxmlformats-officedocument.wordprocessingml.document .docx
+
+     *audio
+      audio/mpeg
+      audio/wav
+
+    * Video
+    video/mp4
+    video/webm
+
+    *archivos comprimidos
+    application/zip
+    application/rar
+    application/7z
+
+    Extras
+    diferentes extensiones
+
+
+    PROPIEDAD PARA MARCAR COMO OBLIGATORIO EN EL FORMLULARIO required
+    -->
+    <form action="/formularios2" method="get">
         <input type="text" placeholder="Ingrese su nombre: " required>
         <input type="password" placeholder="Ingrese su contraseña">
         <input type="number">
-        <input type="week">
+        <input type="month">
+        <br>
+        <input type="range" min="10" max="100" step="5" oninput="valor.value=this.value" value="100">
+        <output id="valor">100</output>
+        <br>
+        <input type="radio" value="opcion1" id="opcion1" name="opciones">
+        <label for="opcion1">Opcion1</label>
+        <br>
+        <input type="radio" value="opcion2" id="opcion2" name="opciones">
+        <label for="opcion2">Opcion2</label>
+        <br>
+        
+        <input type="radio" value="opcion3" id="opcion3" name="opciones">
+        <label for="opcion3">Opcion3</label>
+        <br>
 
+        <input type="radio" value="opcion4" id="opcion4" name="opciones">
+        <label for="opcion4">Opcion4</label>
+
+        <br>
+
+        <input type="checkbox" value="python" name="programacion">
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" value="php" name="programacion">
+        <label for="php">PHP</label>
+        <br>
+        <input type="checkbox" value="javascript" name="programacion">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <input type="checkbox" value="kotlin" name="programacion">
+        <label for="kotlin">Kotlin</label>
+
+        <br>
+        <input type="color" id="colores" required>
+        <br>
+        <input type="file" multiple accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document" >
+        <br>
+        <input type="file" accept="audio/mpeg" required>
+        <br>
+        <input type="file" accept="video/mp4" multiple>
+        <br>
+        <input type="file" accept="application/zip">
+        <br>
+        <input type="file" accept=".html">
+        <br>
+        <input type="file" accept=".py, .js, .html, .css" multiple>
+        <br>
+        <input type="file" accept=".iso" required>
+        <br>
+        <input type="file" accept="application/pdf">
+        <input type="submit" >
+
+
+        
     </form>
 </body>
 </html>
