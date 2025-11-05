@@ -1,0 +1,80 @@
+/** body{
+    /**background-color: rgb(34, 108, 246);**/
+   /* background-image: url("https://fondosparafotografias.com/wp-content/uploads/2020/11/fondos-para-fotografias-madera-blanca-MA-B-0016.jpg");
+    background-size:cover;
+}
+
+**/
+/** ESTILOS PARA TEXTOS **/
+/**
+    1. Color de Texto: color
+    2. Tamaño de Texto: font-size
+    3. Tipografia del Texto: font-family
+    4. Estilo del texto: font-style
+    5. Grosor del texto: font-weight
+    6. Alineacion del texto: text-align
+    7. Decoracion del texto: text-decoration
+    8. Espaciado de la letras y palabras letter-spacing - word-spacing
+    9. Altura de la linea: line-height
+**/
+p{
+    color:rgb(177, 23, 23);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:underline;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+h2{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(1, 24, 81);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** ESTILOS PARA IMAGENES **/
+/** 1. TAMAÑO DE IMAGENES (Ancho width - alto height)
+    2. BORDES A LAS IMAGENES (Groso de linea 
+    "Solid= linea solida -  dashed= linea discontinua - dotted= linea punteada"
+    , esquinas curveadas)
+    3. SOMBRAS box-shadow
+    4. ALINEACIONES display block, inline
+    5. EFECTO AL PASAR EL MOUSE (hover)
+    trasnformadores - transiciones
+    6. OPACIDAD DE LAS IMAGENES
+
+
+
+**/
+img{
+    width: 300px;
+    height: auto;
+    /*border: 5px dotted #000000;*/
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin:10px;
+    cursor: pointer;
+
+}
+img:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s;
+    opacity: 0.9;
+}
+/*.contenedor{
+    /*width: 500px;*/
+    /*display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;
+    /*gap: 30px;*/
+
+/*}*/
+
+.contenedor:hover{
+    background-color: rgb(40, 224, 144);
+}

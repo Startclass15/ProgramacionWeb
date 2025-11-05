@@ -1,0 +1,15 @@
+/*Filtros para Imagenes*/
+/* 1. Desenfoque blur
+    2. Brillo 
+    3. Contraste contrast
+    4. Saturacion saturate
+    5. Tonos sepia
+
+*/ 
+.imagenes{
+    /*filter: blur(1px);*/
+    filter: brightness(120%);
+    filter: contrast(180%);
+    filter: saturate(150%);
+    /*filter: sepia(80%);*/
+}

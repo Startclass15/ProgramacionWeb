@@ -1,0 +1,67 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: center;
+}
+.formulario{
+    background-color: #ffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.247);
+    width: 320px;
+}
+.formulario label{
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 600;
+    
+}
+.formulario input{
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.formulario input:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.30);
+    outline: none;
+}
+.formulario button{
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+.formulario button:hover{
+    background-color: #0056b3;
+}
+.formulario input:hover{
+    border-color: #888;
+}
+
+.formulario img{
+    width: auto;
+    height: 150px;
+    text-align: center;
+}
+img{
+    width: 100px;
+}
+.contenedorFormulario{
+    display: flex;
+    /*position: relative;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vh Ajustar a la altura de la venta */
+}
